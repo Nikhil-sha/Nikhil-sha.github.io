@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('/cdn_modules/animate.css@4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.css');
+
+*,
+html,
+body {
+	font-family: 'Rubik', Arial, sans-serif;
+}
+
+:root {
+	--tooltip-animation: fadeIn;
+	--tooltip-arrow-animation: fadeIn;
+}
+
+[data-tooltip] {
+	position: relative;
+	cursor: pointer;
+}
+
+/* Tooltip styles (added only on hover) */
+[data-tooltip]:hover::after {
+	content: attr(data-tooltip);
+	/* Tooltip text is only created here */
+	position: absolute;
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	white-space: nowrap;
+	opacity: 1;
+	z-index: 10;
+	pointer-events: none;
+	/* Prevents tooltip from interfering with hover */
+	animation: var(--tooltip-animation) 0.3s ease-in-out;
+}
+
+/* Tooltip Arrow */
+[data-tooltip]:hover::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	z-index: 9;
+	opacity: 1;
+	animation: var(--tooltip-arrow-animation) 0.3s ease-in-out;
+}
+
+/* Tooltip for top */
+[data-tooltip-dir="top"]:hover::after {
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	--tooltip-animation: fadeIn;
+}
+
+[data-tooltip-dir="top"]:hover::before {
+	bottom: calc(100% - 5px);
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 5px 5px 0 5px;
+	border-color: #333 transparent transparent transparent;
+	--tooltip-arrow-animation: fadeIn;
+}
+
+/* Tooltip for right */
+[data-tooltip-dir="right"]:hover::after {
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	--tooltip-animation: fadeIn;
+}
+
+[data-tooltip-dir="right"]:hover::before {
+	top: 50%;
+	left: calc(100% - 5px);
+	transform: translateY(-50%);
+	border-width: 5px 5px 5px 0;
+	border-color: transparent #333 transparent transparent;
+	--tooltip-arrow-animation: fadeIn;
+}
+
+/* Tooltip for bottom */
+[data-tooltip-dir="bottom"]:hover::after {
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	--tooltip-animation: fadeIn;
+}
+
+[data-tooltip-dir="bottom"]:hover::before {
+	top: calc(100% - 5px);
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent #333 transparent;
+	--tooltip-arrow-animation: fadeIn;
+}
+
+/* Tooltip for left */
+[data-tooltip-dir="left"]:hover::after {
+	top: 50%;
+	right: 100%;
+	transform: translateY(-50%);
+	--tooltip-animation: fadeIn;
+}
+
+[data-tooltip-dir="left"]:hover::before {
+	top: 50%;
+	right: calc(100% - 5px);
+	transform: translateY(-50%);
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent #333;
+	--tooltip-arrow-animation: fadeIn;
+}
+
+#scroll-window,
+#drop-down {
+	/* Firefox */
+	scrollbar-width: none;
+	/* IE 10+ */
+	-ms-overflow-style: none;
+}
+
+#scroll-window::-webkit-scrollbar,
+#drop-down::-webkit-scrollbar {
+	/* Chrome, Safari, Edge */
+	display: none;
+}
