@@ -2,7 +2,7 @@ tailwind.config = {
 	darkMode: 'class', // Enable dark mode using the 'class' strategy
 	theme: {},
 	plugins: [
-    function({ addUtilities }) {
+		function({ addUtilities }) {
 			addUtilities({
 				'.rotate-3d-right': {
 					transform: 'rotateX(30deg) rotateY(30deg) rotateZ(-15deg) scale(0.90)',
@@ -17,6 +17,6 @@ tailwind.config = {
 					transformStyle: 'preserve-3d',
 				},
 			});
-    },
-  ],
+  },
+ ],
 };
