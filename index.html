@@ -44,13 +44,13 @@
 <body class="bg-gray-100 dark:bg-gray-900 transition-all duration-300">
 
 	<main id="app" class="bg-transparent h-dvh w-screen relative overflow-hidden">
-		<svg id="blob-three" class="absolute top-0 left-0 transition duration-[0.5s] -z-10 w-40 h-40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg aria-hidden="true" id="blob-three" class="absolute top-0 left-0 transition duration-[0.5s] -z-10 w-40 h-40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<circle class="fill-pink-500" cx="100" cy="100" r="100" />
 		</svg>
-		<svg id="blob-two" class="opacity-75 absolute top-0 left-0 transition duration-[8s] -z-10 w-64 h-64 md:w-96 md:h-96" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg aria-hidden="true" id="blob-two" class="opacity-75 absolute top-0 left-0 transition duration-[8s] -z-10 w-64 h-64 md:w-96 md:h-96" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<path fill="#ffef00" d="M423,308.5Q377,377,308.5,404.5Q240,432,195.5,380.5Q151,329,87.5,284.5Q24,240,53.5,161.5Q83,83,161.5,80.5Q240,78,310,89Q380,100,424.5,170Q469,240,423,308.5Z" />
 		</svg>
-		<svg id="blob-one" class="opacity-75 absolute top-0 left-0 transition duration-[8s] -z-10 w-64 h-64 md:w-96 md:h-96" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg aria-hidden="true" id="blob-one" class="opacity-75 absolute top-0 left-0 transition duration-[8s] -z-10 w-64 h-64 md:w-96 md:h-96" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<path fill="#474bff" d="M432,313.5Q416,387,343.5,401.5Q271,416,203,419.5Q135,423,86,368.5Q37,314,49,244.5Q61,175,100.5,121Q140,67,207,56Q274,45,306.5,101Q339,157,393.5,198.5Q448,240,432,313.5Z" />
 		</svg>
 
@@ -77,9 +77,9 @@
 			<section id="about" data-label="About Me" class="slide snap-always snap-center shrink-0 w-full h-full flex justify-center items-center">
 				<article class="flex flex-col items-center justify-center gap-6 px-8 w-full max-w-md">
 					<!-- Avatar -->
-					<figure class="perspective-container">
+					<picture class="perspective-container">
 						<img src="/assets/images/avatar.png" alt="avatar" class="interactive-tilt w-36 h-36 rounded-3xl object-cover shadow-md transition-transform duration-500" />
-					</figure>
+					</picture>
 
 					<!-- Name and Title -->
 					<div class="text-center">
@@ -107,42 +107,42 @@
 					<ul class="grid grid-cols-3 gap-6">
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-orange-100 dark:group-hover:bg-orange-700">
-								<i class="fab fa-html5 text-orange-500 text-3xl"></i>
+								<i aria-hidden="true" class="fab fa-html5 text-orange-500 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">HTML</span>
 						</li>
 
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-blue-100 dark:group-hover:bg-blue-700">
-								<i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
+								<i aria-hidden="true" class="fab fa-css3-alt text-blue-500 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">CSS</span>
 						</li>
 
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-yellow-100 dark:group-hover:bg-yellow-700">
-								<i class="fab fa-js-square text-yellow-500 text-3xl"></i>
+								<i aria-hidden="true" class="fab fa-js-square text-yellow-500 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">JavaScript</span>
 						</li>
 
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-teal-100 dark:group-hover:bg-teal-700">
-								<i class="fas fa-feather text-teal-500 text-3xl"></i>
+								<i aria-hidden="true" class="fas fa-feather text-teal-500 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">Tailwind</span>
 						</li>
 
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-blue-100 dark:group-hover:bg-blue-700">
-								<i class="fab fa-react text-blue-400 text-3xl"></i>
+								<i aria-hidden="true" class="fab fa-react text-blue-400 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">React</span>
 						</li>
 
 						<li class="flex flex-col items-center gap-3 group">
 							<div class="w-16 h-16 rounded-full bg-gray-200 shadow-md flex items-center justify-center dark:bg-gray-700 transition-transform transform group-hover:scale-110 group-hover:bg-green-100 dark:group-hover:bg-green-700">
-								<i class="fab fa-node-js text-green-500 text-3xl"></i>
+								<i aria-hidden="true" class="fab fa-node-js text-green-500 text-3xl"></i>
 							</div>
 							<span class="text-sm text-gray-900 dark:text-gray-300">Node.js</span>
 						</li>
@@ -176,7 +176,7 @@
 							<span id="faq-answer"></span>
 						</p>
 						<div class="flex items-center justify-center">
-							<select id="faq-questions" class="w-full px-8 py-3 text-md text-gray-900 bg-gray-200 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300 dark:focus:ring-blue-500 hover:bg-gray-300 dark:hover:bg-gray-600 transition appearance-none">
+							<select aria-label="questions" id="faq-questions" class="w-full px-8 py-3 text-md text-gray-900 bg-gray-200 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300 dark:focus:ring-blue-500 hover:bg-gray-300 dark:hover:bg-gray-600 transition appearance-none">
 								<option value="" disabled selected class="py-2">Choose a question...</option>
 							</select>
 						</div>
@@ -191,25 +191,25 @@
 					</h2>
 
 					<div id="contact-options" class="mt-8 max-w-sm mx-auto flex flex-wrap justify-center gap-3 gap-y-6 md:gap-5">
-						<a href="mailto:nikhil.s.ms@outlook.com" class="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 dark:bg-red-500 dark:hover:bg-red-600">
+						<a aria-label="contact through email" href="mailto:nikhil.s.ms@outlook.com" class="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 dark:bg-red-500 dark:hover:bg-red-600">
 							<!-- GMail Icon -->
-							<i class="fas fa-envelope fa-md"></i>
+							<i aria-hidden="true" class="fas fa-envelope fa-md"></i>
 						</a>
-						<a href="https://m.youtube.com/" class="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 dark:bg-red-500 dark:hover:bg-red-600">
+						<a aria-label="youtube channel" href="https://m.youtube.com/" class="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 dark:bg-red-500 dark:hover:bg-red-600">
 							<!-- YouTube Icon -->
-							<i class="fab fa-youtube fa-md"></i>
+							<i aria-hidden="true" class="fab fa-youtube fa-md"></i>
 						</a>
-						<a href="https://linkedin.com/" class="w-10 h-10 flex items-center justify-center bg-blue-400 text-white rounded-full shadow-lg hover:bg-blue-500 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 dark:bg-blue-400 dark:hover:bg-blue-500">
+						<a aria-label="linkedIn profile" href="https://linkedin.com/" class="w-10 h-10 flex items-center justify-center bg-blue-400 text-white rounded-full shadow-lg hover:bg-blue-500 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 dark:bg-blue-400 dark:hover:bg-blue-500">
 							<!-- LinkedIn Icon -->
-							<i class="fab fa-linkedin fa-md"></i>
+							<i aria-hidden="true" class="fab fa-linkedin fa-md"></i>
 						</a>
-						<a href="http://github.com/Nikhil-sha/" class="w-10 h-10 flex items-center justify-center bg-gray-900 text-gray-200 rounded-full shadow-md hover:bg-gray-800 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+						<a aria-label="github profile" href="http://github.com/Nikhil-sha/" class="w-10 h-10 flex items-center justify-center bg-gray-900 text-gray-200 rounded-full shadow-md hover:bg-gray-800 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
 							<!-- GitHub Icon -->
-							<i class="fab fa-github fa-md"></i>
+							<i aria-hidden="true" class="fab fa-github fa-md"></i>
 						</a>
-						<a href="https://codepen.io/Nikhil_sh" class="w-10 h-10 flex items-center justify-center bg-gray-900 text-gray-200 rounded-full shadow-md hover:bg-gray-800 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+						<a aria-label="codepen profile" href="https://codepen.io/Nikhil_sh" class="w-10 h-10 flex items-center justify-center bg-gray-900 text-gray-200 rounded-full shadow-md hover:bg-gray-800 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
 							<!-- Codepen Icon -->
-							<i class="fab fa-codepen fa-md"></i>
+							<i aria-hidden="true" class="fab fa-codepen fa-md"></i>
 						</a>
 					</div>
 				</article>
@@ -217,54 +217,54 @@
 		</div>
 
 		<div class="absolute top-5 right-5 md:top-10 md:right-10 flex gap-4 flex-wrap items-center justify-center">
-			<button id="theme-toggler" data-tooltip="switch theme" data-tooltip-dir="left" class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-900 rounded-full shadow-md hover:bg-gray-300 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
+			<button aria-label="switch theme" id="theme-toggler" data-tooltip="switch theme" data-tooltip-dir="left" class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-900 rounded-full shadow-md hover:bg-gray-300 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700">
 				<i class="fas fa-moon fa-md"></i>
 			</button>
 
-			<button id="drop-down-toggler" data-tooltip="menu" data-tooltip-dir="bottom" class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-500 dark:hover:bg-blue-600">
+			<button aria-label="toggle menu" id="drop-down-toggler" data-tooltip="menu" data-tooltip-dir="bottom" class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-500 dark:hover:bg-blue-600">
 				<i class="fas fa-bars fa-md"></i>
 			</button>
 
-			<nav id="drop-down" class="hidden animate__animated animate__repeat-1 animate__fast absolute top-14 -right-2 w-14 max-h-64 md:max-h-96 overflow-y-auto bg-gray-200 text-gray-900 rounded-full shadow-lg p-2 dark:bg-gray-800 dark:text-gray-200 transition duration-300">
+			<nav aria-label="menu" id="drop-down" class="hidden animate__animated animate__repeat-1 animate__fast absolute top-14 -right-2 w-14 max-h-64 md:max-h-96 overflow-y-auto bg-gray-200 text-gray-900 rounded-full shadow-lg p-2 dark:bg-gray-800 dark:text-gray-200 transition duration-300">
 				<ul class="flex flex-col items-center gap-3">
 					<!-- Menu Items -->
 					<li>
-						<a href="#hero" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
-							<i class="fas fa-house-chimney"></i>
+						<a aria-label="go to home section" href="#hero" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
+							<i aria-hidden="true" class="fas fa-house-chimney"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#about" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
-							<i class="fas fa-smile"></i>
+						<a aria-label="go to about section" href="#about" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
+							<i aria-hidden="true" class="fas fa-smile"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#social-links" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
-							<i class="fas fa-envelope"></i>
+						<a aria-label="go to contact section" href="#social-links" onclick="scrollToSlide(event)" class="flex items-center justify-center w-10 h-10 bg-gray-100 text-gray-900 dark:text-gray-300 rounded-full shadow-inner dark:shadow-gray-600 hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500">
+							<i aria-hidden="true" class="fas fa-envelope"></i>
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 
-		<div id="section-label" class="fixed top-5 left-5 md:top-10 md:left-10 bg-gray-800 text-sm font-medium text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 dark:bg-gray-700 dark:text-gray-300 animate__animated animate__faster animate__repeat-1 hidden">
+		<div aria-label="section label" id="section-label" class="fixed top-5 left-5 md:top-10 md:left-10 bg-gray-800 text-sm font-medium text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 dark:bg-gray-700 dark:text-gray-300 animate__animated animate__faster animate__repeat-1 hidden">
 		</div>
 
 		<nav class="w-full absolute bottom-5 md:bottom-10 flex items-center justify-center">
 			<div class="rounded-full flex flex-wrap gap-4 items-center justify-center">
 				<!-- Previous Button -->
-				<button id="scroll-left" data-tooltip="previous" data-tooltip-dir="top" class="w-12 h-12 flex items-center justify-center bg-gray-200 text-gray-900 rounded-full shadow-md opacity-25 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 transition transform hover:scale-110 dark:bg-gray-800 dark:text-gray-300">
-					<i class="fas fa-chevron-left fa-md"></i>
+				<button aria-label="previous button" id="scroll-left" data-tooltip="previous" data-tooltip-dir="top" class="w-12 h-12 flex items-center justify-center bg-gray-200 text-gray-900 rounded-full shadow-md opacity-25 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-50 transition transform hover:scale-110 dark:bg-gray-800 dark:text-gray-300">
+					<i aria-hidden="true" class="fas fa-chevron-left fa-md"></i>
 				</button>
 
 				<!-- Next Button -->
-				<button id="scroll-right" data-tooltip="next" data-tooltip-dir="top" class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-md opacity-25 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition transform hover:scale-110 dark:bg-blue-500">
-					<i class="fas fa-chevron-right fa-md"></i>
+				<button aria-label="next button" id="scroll-right" data-tooltip="next" data-tooltip-dir="top" class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-md opacity-25 hover:opacity-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition transform hover:scale-110 dark:bg-blue-500">
+					<i aria-hidden="true" class="fas fa-chevron-right fa-md"></i>
 				</button>
 			</div>
 		</nav>
 
-		<div id="notification-container" class="px-5 md:px-10 w-full flex flex-col justify-center items-center gap-2 fixed top-5 md:top-10 z-50 bg-transparent pointer-events-none">
+		<div aria-modal="true" id="notification-container" class="px-5 md:px-10 w-full flex flex-col justify-center items-center gap-2 fixed top-5 md:top-10 z-50 bg-transparent pointer-events-none">
 		</div>
 	</main>
 
