@@ -189,9 +189,6 @@ async function loadProjects() {
 						<button data-share-text="${project.title} by Nikhil Sharma" data-share-url="${project.url}" class="share-button w-10 h-10 flex items-center justify-center bg-gray-300 text-gray-900 rounded-full shadow-md hover:bg-blue-600 hover:text-white dark:bg-gray-600 dark:hover:bg-blue-500 transition focus:outline-none focus:ring-2 focus:ring-blue-500">
 							<i class="fas fa-share"></i>
 						</button>
-						<button class="print-button w-10 h-10 flex items-center justify-center bg-gray-300 text-gray-900 rounded-full shadow-md hover:bg-red-600 hover:text-white dark:bg-gray-600 dark:hover:bg-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500">
-							<i class="fas fa-print"></i>
-						</button>
 					</div>
    	</article>
    `;
