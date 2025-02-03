@@ -1,5 +1,5 @@
 tailwind.config = {
-	darkMode: 'class', // Enable dark mode using the 'class' strategy
+	darkMode: 'class',
 	theme: {},
 	plugins: [
 		function({ addUtilities }) {
