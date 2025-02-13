@@ -1,10 +1,10 @@
 [
 	{
-		"name": "Ripple",
-		"title": "Ripple - A minimal music webapp",
-		"description": "Ripple is a music streaming web app made using HTML5, Tailwind CSS and ReactJS. It uses saavn.dev API to fetch songs.",
-		"image": "/assets/images/ripple_banner.jpg",
-		"url": "https://nikhil-sha.github.io/Ripple/"
+		"name": "todo",
+		"title": "To-do list WebApp",
+		"description": "A simple and efficient to-do list app using pure HTML, Vanilla JavaScript, and Tailwind CSS. The app allows users to add, edit, and delete tasks, helping them stay organized and manage their time effectively. The clean and modern design is powered by Tailwind CSS, providing a user-friendly interface with responsive features. The functionality is handled with Vanilla JavaScript, making it lightweight and fast.",
+		"image": "/assets/images/to-do-webapp_banner.jpg",
+		"url": "https://nikhil-sha.github.io/To-Do-webapp/"
 	},
 	{
 		"name": "netra",
@@ -14,10 +14,10 @@
 		"url": "https://nikhil-sha.github.io/Netra/"
 	},
 	{
-		"name": "todo",
-		"title": "To-do list WebApp",
-		"description": "A simple and efficient to-do list app using pure HTML, Vanilla JavaScript, and Tailwind CSS. The app allows users to add, edit, and delete tasks, helping them stay organized and manage their time effectively. The clean and modern design is powered by Tailwind CSS, providing a user-friendly interface with responsive features. The functionality is handled with Vanilla JavaScript, making it lightweight and fast.",
-		"image": "/assets/images/to-do-webapp_banner.jpg",
-		"url": "https://nikhil-sha.github.io/To-Do-webapp/"
+		"name": "Ripple",
+		"title": "Ripple - A minimal music webapp",
+		"description": "Ripple is a music streaming web app made using HTML5, Tailwind CSS and ReactJS. It uses saavn.dev API to fetch songs.",
+		"image": "/assets/images/ripple_banner.jpg",
+		"url": "https://nikhil-sha.github.io/Ripple/"
 	}
 ]
