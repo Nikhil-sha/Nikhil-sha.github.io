@@ -1,13 +1,13 @@
 [
 	{
-		"name": "todo",
+		"name": "Todo",
 		"title": "To-do list WebApp",
 		"description": "A simple and efficient to-do list app using pure HTML, Vanilla JavaScript, and Tailwind CSS. The app allows users to add, edit, and delete tasks, helping them stay organized and manage their time effectively. The clean and modern design is powered by Tailwind CSS, providing a user-friendly interface with responsive features. The functionality is handled with Vanilla JavaScript, making it lightweight and fast.",
 		"image": "/assets/images/to-do-webapp_banner.jpg",
 		"url": "https://nikhil-sha.github.io/To-Do-webapp/"
 	},
 	{
-		"name": "netra",
+		"name": "Netra",
 		"title": "Netra - Multi-Platform Search Assistant",
 		"description": "Netra is a web app crafted to simplify and speed up your search experience by generating links to multiple search engines and apps with a single query. By unifying various platforms, Netra provides seamless access to information, making your searches faster and more efficient.",
 		"image": "/assets/images/netra_banner.jpg",

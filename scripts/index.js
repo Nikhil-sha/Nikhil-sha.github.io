@@ -167,7 +167,7 @@ async function loadProjects() {
 
 		projects.forEach(project => {
 			const projectSection = document.createElement('section');
-			projectSection.id = project.name;
+			projectSection.id = project.name.toLowerCase();
 			projectSection.dataset.label = 'Project';
 			projectSection.className = 'slide snap-always snap-center shrink-0 w-full h-full flex justify-center items-center';
 
